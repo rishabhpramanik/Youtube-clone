@@ -1,0 +1,213 @@
+.header{
+    height: 57px;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(236, 228, 228); 
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;  
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+
+.youtube-logo{          
+    height: 20px;
+}
+
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.search-bar{
+    flex: 1;
+    height: 36px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-width: 1px;
+    padding-left: 10px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgb(0, 0, 0, 0.05);
+    width: 0px;
+}
+
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.search-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    height: 40px;
+    width: 70px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    margin-left: -1px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.search-button, .voice-search-button{
+    position: realtive;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button .tooltip, .voice-search-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip, .voice-search-button:hover .tooltip{
+    opacity: 1;
+    transition: opacity 0.25s;
+}
+
+.voice-search-button{
+    height: 40px;
+    width: 40px; 
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;  
+}
+
+.search-icon{
+    flex: 1fr;
+    height: 25px;
+    width: 30px;
+}
+
+.voice-search-icon{
+    height: 25px;
+    width: 40px;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 180px;
+    margin-right: 20px;
+    flex-shrink: 0  ;
+}
+
+.upload-icon-conatiner, .youtube-apps-icon-container, .notification-icon-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-icon-container .tooltip, .youtube-apps-icon-container .tooltip, 
+.notification-icon-container .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: -30px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.upload-icon-container:hover .tooltip, .youtube-apps-icon-container:hover .tooltip, 
+.notification-icon-container:hover .tooltip{
+    opacity: 1;
+    transition: opacity 0.25s;
+}
+
+.uploads-icon{
+    height: 25px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.youtube-apps-icon{
+    height: 25px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.notifications-icon{
+    height: 25px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.notifications-count{
+    position: absolute;
+    top: -1px;
+    right: 5px;
+    background-color: rgb(204, 0, 0);
+    color: white;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    border-radius: 50%;
+    font-size: 11px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.profile-picture{
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
